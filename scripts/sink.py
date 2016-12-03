@@ -85,7 +85,7 @@ def source_connect(ip):
     s.connect((ip, 7236))
 
     # Connect via wireless interface
-    s.setsockopt(socket.SOL_SOCKET, 25, 'wlan0')
+    s.setsockopt(socket.SOL_SOCKET, 25, 'wlan1')
 
     # Wait to receive data
     data = s.recv(1024)

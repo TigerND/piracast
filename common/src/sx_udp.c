@@ -41,7 +41,7 @@ void * sx_udp_create(
     
     #if 0
     char *opt;
-    opt = "wlan0";
+    opt = "wlan1";
     rv = setsockopt(udp_cblk->sock, SOL_SOCKET, SO_BINDTODEVICE, opt, 5);
     assert(rv == 0);
     #endif 

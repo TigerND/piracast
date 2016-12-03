@@ -6,7 +6,7 @@ To get started:
 1. cd into install directory and execute the setup script. 
     cd install
     sudo python setup.py
-2. Set static IP address on wlan0 interface as per setup script instruction. 
+2. Set static IP address on wlan1 interface as per setup script instruction. 
 3. Reboot. 
 4. To execute the application: 
     cd application

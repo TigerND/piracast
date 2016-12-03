@@ -26,7 +26,7 @@ import sink
 
 from util import get_stdout
 
-cmd_wlan0_up = 'ifup wlan0'
+cmd_wlan1_up = 'ifup wlan1'
 cmd_inc_rmem_default = 'sysctl -w net.core.rmem_default=1000000'
 #cmd_launch_core_app = 'nice -n -20 ./core 1>/dev/null &'
 cmd_launch_core_app = 'nice -n -20 ./core'
@@ -48,8 +48,8 @@ def leased_ip_get():
     # return the most recently leased IP address
     return ip_list[-1]
 
-print 'Bring up wlan0 just in case...'
-get_stdout(cmd_wlan0_up)
+print 'Bring up wlan1 just in case...'
+get_stdout(cmd_wlan1_up)
 
 print 'Increase rmem_default...'
 get_stdout(cmd_inc_rmem_default)
